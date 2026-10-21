@@ -1,0 +1,21 @@
+- PUBLIC
+- a website listing all the products in stack 
+- provide contact details  - link to whatsapp
+
+- ADMIN
+- manage products (add, edit, delete)
+- each product - name, price, description, image, measurement unit, quantity, instock count
+- admin login to manage products
+
+
+- SALES REPRESENTATIVE
+- view products
+- Sell products to customers
+
+- DATABASE DESIGN 
+- Tables:
+  - Users: id, name, email, password, role (admin/sales representative)
+  - Products: id, name, price, description, image_url, measurement_unit, quantity, instock_count
+  - Sales: id, sales_rep_id, customer_name, customer_contact, sale_date
+  - Sales_Items: id, sale_id, product_id, quantity_sold, total_price
+
